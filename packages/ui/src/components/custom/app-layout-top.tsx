@@ -1,0 +1,21 @@
+'use client'
+
+import {SidebarTrigger} from "@workspace/ui/components/sidebar";
+import {Breadcrumb} from "@workspace/ui/components/breadcrumb";
+
+interface AppLayoutTopProps {
+    title: string | undefined;
+}
+
+export const AppLayoutTop = ({title}: AppLayoutTopProps) => {
+    return (
+        <div className="flex items-center gap-2 px-4 py-2">
+            <SidebarTrigger/>
+            <div className="pl-2 border-l">
+                {title && <Breadcrumb>
+                    {title}
+                </Breadcrumb>}
+            </div>
+        </div>
+    )
+}
