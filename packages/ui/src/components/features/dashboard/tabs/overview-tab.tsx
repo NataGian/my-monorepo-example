@@ -1,11 +1,10 @@
 import {Card, CardContent, CardDescription, CardHeader, CardTitle,} from "@workspace/ui/components/ui/card";
-import {TabsContent} from "@workspace/ui/components/ui/tabs";
 import {Badge} from "@workspace/ui/components/ui/badge";
 import {Avatar, AvatarFallback,} from "@workspace/ui/components/ui/avatar";
 
 export const OverviewTab = () => {
     return (
-        <TabsContent value="overview" className="space-y-4">
+        <>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <Card>
                     <CardHeader>
@@ -63,6 +62,7 @@ export const OverviewTab = () => {
                     </div>
                 </CardContent>
             </Card>
-        </TabsContent>
+        </>
+
     )
 }

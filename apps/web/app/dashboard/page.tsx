@@ -1,7 +1,9 @@
-import {DashboardPage} from "@workspace/ui/components";
+import {AppTabs, DashboardPage, tabItems} from "@workspace/ui/components";
 
 export default function Page() {
     return (
-        <DashboardPage/>
+        <DashboardPage tabs={
+            <AppTabs tabItems={tabItems}/>
+        }/>
     )
 }

@@ -1,7 +1,13 @@
-import {Tabs, TabsList, TabsTrigger} from "@workspace/ui/components/ui/tabs";
-import {OverviewTab} from "@workspace/ui/components/features/dashboard/tabs/overview-tab";
+import * as React from "react";
 
-export const DashboardPage = () => {
+interface DashboardPageProps {
+    tabs?: React.ReactNode;
+}
+
+export const DashboardPage = ({
+
+                                  tabs = []
+                              }: DashboardPageProps) => {
     return (
         <div className="pl-0 pr-6 space-y-6">
             <div className="flex justify-between items-center">
@@ -10,12 +16,7 @@ export const DashboardPage = () => {
                     <p className="text-gray-500">Καλώς ήρθατε στον πίνακα ελέγχου σας</p>
                 </div>
             </div>
-            <Tabs defaultValue="overview" className="w-full">
-                <TabsList className="mb-4">
-                    <TabsTrigger value="overview">Επισκόπηση</TabsTrigger>
-                </TabsList>
-                <OverviewTab/>
-            </Tabs>
+            {tabs}
         </div>
     );
 }
