@@ -3,8 +3,8 @@
 import {usePathname} from "next/navigation";
 import {AppLayout, AppLayoutTop, AppSidebar, SidebarProvider} from "@workspace/ui/components";
 import {Providers} from "@/components/providers"
-import {sidebarItems} from "@/lib/constants";
 import {useCurrentSidebarItem} from "@workspace/ui/hooks/navigation";
+import * as React from "react"
 
 export const ClientLayout = ({
                                  children,
@@ -15,9 +15,9 @@ export const ClientLayout = ({
     return (
         <Providers>
             <SidebarProvider>
-                <AppSidebar pathname={pathname} sidebarItems={sidebarItems}/>
+                <AppSidebar pathname={pathname}/>
                 <main className="flex-1 flex flex-col">
-                    <AppLayoutTop title={useCurrentSidebarItem(sidebarItems, pathname)}/>
+                    <AppLayoutTop title={useCurrentSidebarItem(pathname)}/>
                     <AppLayout>
                         {children}
                     </AppLayout>

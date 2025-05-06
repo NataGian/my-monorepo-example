@@ -1,7 +1,7 @@
 import {TabItem} from "@workspace/ui/lib";
 import {AnalyticsTab, OverviewTab, ReportsTab} from "@workspace/ui/components/features/dashboard/tabs";
 
-export const tabItems: TabItem[] = [
+export const dashboardTabItems: TabItem[] = [
     {
         id: "overview-tab",
         label: "Επισκόπηση",

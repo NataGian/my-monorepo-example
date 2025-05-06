@@ -1,19 +1,11 @@
-import {
-    Avatar,
-    AvatarFallback,
-    Badge,
-    Button,
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-    TabsContent
-} from "@workspace/ui/components";
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@workspace/ui/components/ui/card"
+import {Badge} from "@workspace/ui/components/ui/badge"
+import {Avatar, AvatarFallback} from "@workspace/ui/components/ui/avatar"
+import {Button} from "@workspace/ui/components/ui/button"
 
-export function UpcomingAppointmentsTab() {
+export const UpcomingAppointmentsTab = () => {
     return (
-        <TabsContent value="upcoming" className="space-y-4">
+        <>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <Card>
                     <CardHeader>
@@ -101,6 +93,6 @@ export function UpcomingAppointmentsTab() {
                     </div>
                 </CardContent>
             </Card>
-        </TabsContent>
+        </>
     )
 }

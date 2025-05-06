@@ -1,6 +1,6 @@
 'use client'
 import {clsx} from "clsx";
-import {SidebarItem} from "@workspace/ui/lib";
+import {defaultSidebarItems, SidebarItem} from "@workspace/ui/lib";
 import {
     Sidebar,
     SidebarContent,
@@ -13,7 +13,7 @@ import {
 
 interface AppSidebarProps {
     pathname: string;
-    sidebarItems: SidebarItem[];
+    sidebarItems?: SidebarItem[];
 }
 
 export const AppSidebar = ({pathname, sidebarItems}: AppSidebarProps) => {
@@ -23,7 +23,7 @@ export const AppSidebar = ({pathname, sidebarItems}: AppSidebarProps) => {
                 <SidebarGroup>
                     <SidebarGroupContent className="mt-2">
                         <SidebarMenu>
-                            {sidebarItems.map((item) => {
+                            {(sidebarItems ?? defaultSidebarItems).map((item) => {
                                     const isActive = pathname.startsWith(item.href);
                                     return (
                                         <SidebarMenuItem key={item.title} className="mb-2">

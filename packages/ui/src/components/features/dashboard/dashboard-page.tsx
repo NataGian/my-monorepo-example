@@ -1,12 +1,13 @@
 import * as React from "react";
+import {TabItem} from "@workspace/ui/lib";
+import {AppTabs, dashboardTabItems} from "@workspace/ui/components";
 
 interface DashboardPageProps {
-    tabs?: React.ReactNode;
+    tabItems?: TabItem[];
 }
 
 export const DashboardPage = ({
-
-                                  tabs = []
+                                  tabItems
                               }: DashboardPageProps) => {
     return (
         <div className="pl-0 pr-6 space-y-6">
@@ -16,7 +17,7 @@ export const DashboardPage = ({
                     <p className="text-gray-500">Καλώς ήρθατε στον πίνακα ελέγχου σας</p>
                 </div>
             </div>
-            {tabs}
+            <AppTabs tabItems={tabItems ?? dashboardTabItems}/>
         </div>
     );
 }

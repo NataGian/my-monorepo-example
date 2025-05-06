@@ -1,4 +1,4 @@
-import {Tabs, TabsTrigger} from "@workspace/ui/components";
+import {appointmentsTabItems, Tabs, TabsTrigger} from "@workspace/ui/components";
 import * as React from "react";
 import {TabItem} from "@workspace/ui/lib";
 import {TabsContent, TabsList} from "@radix-ui/react-tabs";
@@ -12,7 +12,9 @@ export const AppTabs = ({
                             tabItems = [],
                             defaultValue
                         }: AppTabsProps) => {
-    if (tabItems.length === 0) return null;
+    if (tabItems.length === 0) {
+        tabItems = appointmentsTabItems;
+    }
 
     const activeTab = defaultValue || tabItems[0]?.id;
     return (

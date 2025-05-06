@@ -1,10 +1,16 @@
-import {Tabs, TabsList, TabsTrigger} from "@workspace/ui/components/ui/tabs";
 import {Button} from "@workspace/ui/components/ui/button";
-import {UpcomingAppointmentsTab} from "@workspace/ui/components/features/appointments/tabs/upcoming-appointments-tab";
-import {PastAppointmentsTab} from "@workspace/ui/components/features/appointments/tabs/past-appointments-tab";
-import {CanceledAppointmentsTab} from "@workspace/ui/components/features/appointments/tabs/canceled-appointments-tab";
+import * as React from "react";
+import {Plus} from "lucide-react";
+import {appointmentsTabItems, AppTabs} from "@workspace/ui/components";
+import {TabItem} from "@workspace/ui/lib";
 
-export const AppointmentsPage = () => {
+interface AppointmentsPageProps {
+    tabItems?: TabItem[];
+}
+
+export const AppointmentsPage = ({
+                                     tabItems
+                                 }: AppointmentsPageProps) => {
     return (
         <div className="pl-0 pr-6 space-y-6">
             <div className="flex justify-between items-center">
@@ -12,18 +18,9 @@ export const AppointmentsPage = () => {
                     <h1 className="text-3xl font-bold">Ραντεβού</h1>
                     <p className="text-gray-500">Διαχείριση των ραντεβού σας</p>
                 </div>
-                <Button>+ Νέο Ραντεβού</Button>
+                <Button><Plus></Plus> Νέο Ραντεβού</Button>
             </div>
-            <Tabs defaultValue="upcoming" className="w-full">
-                <TabsList className="mb-4">
-                    <TabsTrigger value="upcoming">Επερχόμενα</TabsTrigger>
-                    <TabsTrigger value="past">Παρελθόντα</TabsTrigger>
-                    <TabsTrigger value="canceled">Ακυρωμένα</TabsTrigger>
-                </TabsList>
-                <UpcomingAppointmentsTab/>
-                <PastAppointmentsTab/>
-                <CanceledAppointmentsTab/>
-            </Tabs>
+            <AppTabs tabItems={tabItems ?? appointmentsTabItems}/>
         </div>
     );
 }

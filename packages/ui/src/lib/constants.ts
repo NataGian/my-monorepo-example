@@ -1,5 +1,5 @@
-import {SidebarItem} from "@workspace/ui/lib/types";
 import {BookOpen, ClipboardPaste} from "lucide-react";
+import {SidebarItem} from "@workspace/ui/lib/types";
 
 const APP_ROUTES = {
     DASHBOARD: {
@@ -10,7 +10,7 @@ const APP_ROUTES = {
     },
 };
 
-export const sidebarItems: SidebarItem[] = [
+export const defaultSidebarItems: SidebarItem[] = [
     {
         title: "Πίνακας Ελέγχου",
         href: APP_ROUTES.DASHBOARD.BASE_PAGE,

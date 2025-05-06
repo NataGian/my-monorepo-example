@@ -1,5 +1,5 @@
 import {Geist, Geist_Mono} from "next/font/google"
-
+import * as React from "react"
 import "@workspace/ui/globals.css"
 import {ClientLayout} from "@/components/client-layout";
 import {Metadata} from "next";
@@ -15,7 +15,7 @@ const fontMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-    title: "Monorepo example",
+    title: "Monorepo",
     description: "Monorepo example",
 };
 
