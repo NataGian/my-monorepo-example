@@ -3,11 +3,20 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@workspace/ui/*": ["./src/*"],
-      "@features/*": ["packages/ui/src/features/*"]
+      "@workspace/ui/*": [
+        "./src/*"
+      ],
+      "@workspace/ui": [
+        "./src/index.ts"
+      ]
     },
-    "moduleResolution": "node",
+    "moduleResolution": "node"
   },
-  "include": ["."],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
