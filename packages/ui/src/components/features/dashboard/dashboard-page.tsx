@@ -1,5 +1,5 @@
-import {Tabs, TabsList, TabsTrigger} from "@workspace/ui/components/tabs";
-import {OverviewTab} from "@workspace/ui/features/dashboard/tabs/overview-tab";
+import {Tabs, TabsList, TabsTrigger} from "@workspace/ui/components/ui/tabs";
+import {OverviewTab} from "@workspace/ui/components/features/dashboard/tabs/overview-tab";
 
 export const DashboardPage = () => {
     return (

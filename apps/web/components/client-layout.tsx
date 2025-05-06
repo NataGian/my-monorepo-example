@@ -1,9 +1,7 @@
 'use client'
 
 import {usePathname} from "next/navigation";
-import {SidebarProvider} from "@workspace/ui/components/sidebar";
-import {AppSidebar} from "@workspace/ui/components/custom/app-sidebar";
-import {AppLayoutTop} from "@workspace/ui/components/custom/app-layout-top";
+import {AppLayoutTop, AppSidebar, SidebarProvider} from "@workspace/ui/components";
 import {Providers} from "@/components/providers"
 import {sidebarItems} from "@/lib/constants";
 import {useCurrentSidebarItem} from "@workspace/ui/hooks/navigation";

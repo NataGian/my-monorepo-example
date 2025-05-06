@@ -1,5 +1,5 @@
 import React from "react";
-import {Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator} from "../breadcrumb";
+import {Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator} from "../../ui/breadcrumb";
 import {cn} from "@workspace/ui/lib/utils";
 
 interface AppLayoutProps {

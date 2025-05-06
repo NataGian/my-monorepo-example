@@ -1,5 +1,4 @@
-import {AppLayout} from "@workspace/ui/components/custom/app-layout";
-import {AppointmentsPage} from "@workspace/ui/features";
+import {AppLayout, AppointmentsPage} from "@workspace/ui/components";
 
 export default function Page() {
     return (

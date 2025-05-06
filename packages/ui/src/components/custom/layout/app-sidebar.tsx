@@ -8,7 +8,7 @@ import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem
-} from "../sidebar";
+} from "../../ui/sidebar";
 import {SidebarItem} from "@workspace/ui/lib/types";
 
 interface AppSidebarProps {

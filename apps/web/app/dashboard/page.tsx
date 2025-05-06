@@ -1,5 +1,4 @@
-import {AppLayout} from "@workspace/ui/components/custom/app-layout";
-import {DashboardPage} from "@workspace/ui/features";
+import {AppLayout, DashboardPage} from "@workspace/ui/components";
 
 export default function Page() {
     return (

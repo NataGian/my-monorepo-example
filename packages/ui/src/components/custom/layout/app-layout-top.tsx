@@ -1,7 +1,7 @@
 'use client'
 
-import {SidebarTrigger} from "@workspace/ui/components/sidebar";
-import {Breadcrumb} from "@workspace/ui/components/breadcrumb";
+import {SidebarTrigger} from "@workspace/ui/components/ui/sidebar";
+import {Breadcrumb} from "@workspace/ui/components/ui/breadcrumb";
 
 interface AppLayoutTopProps {
     title: string | undefined;
