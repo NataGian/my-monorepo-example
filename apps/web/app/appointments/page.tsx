@@ -1,7 +1,7 @@
-import {AppLayout, AppointmentsPage} from "@workspace/ui/components";
+import {AppointmentsPage} from "@workspace/ui/components";
 
 export default function Page() {
     return (
-        <AppLayout><AppointmentsPage/></AppLayout>
+        <AppointmentsPage/>
     )
 }

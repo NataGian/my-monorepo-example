@@ -8,4 +8,5 @@ export default defineConfig({
     outDir: 'dist',
     shims: true,
     external: ['react', 'react-dom'],
+    noExternal: ['@radix-ui/**'],
 })

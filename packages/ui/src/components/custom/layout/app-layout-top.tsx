@@ -3,7 +3,7 @@
 import {Breadcrumb, SidebarTrigger} from "@workspace/ui/components";
 
 interface AppLayoutTopProps {
-    title: string | undefined;
+    title?: string;
 }
 
 export const AppLayoutTop = ({title}: AppLayoutTopProps) => {
