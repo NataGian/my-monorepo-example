@@ -1,4 +1,5 @@
-import {Button, Tabs, TabsList, TabsTrigger} from "@workspace/ui/components";
+import {Tabs, TabsList, TabsTrigger} from "@workspace/ui/components/ui/tabs";
+import {Button} from "@workspace/ui/components/ui/button";
 import {UpcomingAppointmentsTab} from "@workspace/ui/components/features/appointments/tabs/upcoming-appointments-tab";
 import {PastAppointmentsTab} from "@workspace/ui/components/features/appointments/tabs/past-appointments-tab";
 import {CanceledAppointmentsTab} from "@workspace/ui/components/features/appointments/tabs/canceled-appointments-tab";

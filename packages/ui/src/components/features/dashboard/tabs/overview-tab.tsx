@@ -1,14 +1,7 @@
-import {
-    Avatar,
-    AvatarFallback,
-    Badge,
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-    TabsContent
-} from "@workspace/ui/components";
+import {Card, CardContent, CardDescription, CardHeader, CardTitle,} from "@workspace/ui/components/ui/card";
+import {TabsContent} from "@workspace/ui/components/ui/tabs";
+import {Badge} from "@workspace/ui/components/ui/badge";
+import {Avatar, AvatarFallback,} from "@workspace/ui/components/ui/avatar";
 
 export const OverviewTab = () => {
     return (
