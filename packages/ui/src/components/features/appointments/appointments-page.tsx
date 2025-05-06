@@ -1,8 +1,8 @@
-import {Button} from "@workspace/ui/components/ui/button";
-import {Tabs, TabsList, TabsTrigger} from "@workspace/ui/components/ui/tabs";
-import {UpcomingAppointmentsTab} from "@workspace/ui/components/features/appointments/tabs/upcoming-appointments-tab";
-import {PastAppointmentsTab} from "@workspace/ui/components/features/appointments/tabs/past-appointments-tab";
-import {CanceledAppointmentsTab} from "@workspace/ui/components/features/appointments/tabs/canceled-appointments-tab";
+import {Button} from "../../ui/button";
+import {Tabs, TabsList, TabsTrigger} from "../../ui/tabs";
+import {UpcomingAppointmentsTab} from "./tabs/upcoming-appointments-tab";
+import {PastAppointmentsTab} from "./tabs/past-appointments-tab";
+import {CanceledAppointmentsTab} from "./tabs/canceled-appointments-tab";
 
 export const AppointmentsPage = () => {
     return (

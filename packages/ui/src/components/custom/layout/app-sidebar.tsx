@@ -9,7 +9,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem
 } from "../../ui/sidebar";
-import {SidebarItem} from "@workspace/ui/lib/types";
+import {SidebarItem} from "../../../lib/types";
 
 interface AppSidebarProps {
     pathname: string;
