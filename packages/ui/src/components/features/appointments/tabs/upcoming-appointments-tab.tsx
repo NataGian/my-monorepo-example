@@ -1,8 +1,15 @@
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "../../../ui/card";
-import {TabsContent} from "../../../ui/tabs";
-import {Button} from "../../../ui/button";
-import {Avatar, AvatarFallback} from "../../../ui/avatar";
-import {Badge} from "../../../ui/badge";
+import {
+    Avatar,
+    AvatarFallback,
+    Badge,
+    Button,
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+    TabsContent
+} from "@workspace/ui/components";
 
 export function UpcomingAppointmentsTab() {
     return (

@@ -1,5 +1,4 @@
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "../../../ui/card";
-import {TabsContent} from "../../../ui/tabs";
+import {Card, CardContent, CardDescription, CardHeader, CardTitle, TabsContent} from "@workspace/ui/components";
 
 export const PastAppointmentsTab = () => {
     return (

@@ -1,5 +1,6 @@
 'use client'
 import {clsx} from "clsx";
+import {SidebarItem} from "@workspace/ui/lib";
 import {
     Sidebar,
     SidebarContent,
@@ -8,8 +9,7 @@ import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem
-} from "../../ui/sidebar";
-import {SidebarItem} from "../../../lib/types";
+} from "@workspace/ui/components";
 
 interface AppSidebarProps {
     pathname: string;
