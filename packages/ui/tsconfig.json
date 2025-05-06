@@ -11,8 +11,8 @@
     "jsx": "react-jsx",
     "module": "esnext",
     "target": "esnext",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": false,
     "isolatedModules": true,
     "resolveJsonModule": true,
     "strict": true
